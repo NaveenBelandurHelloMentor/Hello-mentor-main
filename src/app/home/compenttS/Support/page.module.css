@@ -1,0 +1,208 @@
+.mainContainer {
+    padding: 2.5rem 2rem 2.5rem 1rem;
+}
+
+.mainHeading {
+    display: flex;
+    padding: 2.5rem 2rem 2.5rem 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+    align-self: stretch;
+}
+
+.cardContainer {
+    display: flex;
+    padding: 1rem;
+    align-items: flex-start;
+    gap: 1.5rem;
+    align-self: stretch;
+    border-radius: 1rem;
+    background: #FFF;
+    box-shadow: 0px 4px 8px 0px rgba(0, 100, 168, 0.08), 0px 4px 16px 0px rgba(50, 50, 71, 0.06);
+}
+
+.cardmain {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.cardfirst {
+    display: flex;
+    padding: 1.5rem var(--Spacing-gap-0, 0rem);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    flex: 1 0 0;
+    align-self: stretch;
+}
+
+.cardfirst_box {
+    display: flex;
+    width: 31.625rem;
+    padding: 0rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.cardsecond_box {
+    display: flex;
+    padding: var(--Spacing-gap-0, 0rem) 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    align-self: stretch;
+}
+
+.cardinside__ {
+    display: flex;
+    padding: 0.25rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+.cardsecond {
+    display: flex;
+    padding: 1.5rem 1rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    flex: 1 0 0;
+    align-self: stretch;
+    border-radius: 1rem;
+    border: 1px solid #D9D9D9;
+    background: #FFF;
+}
+
+.cardfnt {
+    color: #007BCB;
+}
+
+
+
+
+
+.cardInside_second {
+    width: 100%;
+    text-align: center;
+}
+
+
+.formFirst__ {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+    align-self: stretch;
+}
+
+.InputSecond {
+    padding-top: 0.25rem;
+    display: flex;
+    height: 2.375rem;
+    padding: var(--Spacing-gap-0, 0rem) var(--Spacing-gap-8, 0.5rem);
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    border-radius: var(--Curve-curve-1, 0.25rem);
+    border: 1px solid var(--Black-300, #B0B0B0);
+}
+
+.des {
+    padding-top: 1rem;
+}
+
+.textAr {
+    display: flex;
+    padding: 3.5rem var(--Spacing-gap-8, 0.5rem);
+    align-items: flex-start;
+    gap: 0.625rem;
+    align-self: stretch;
+    border-radius: var(--Curve-curve-1, 0.25rem);
+    border: 1px solid var(--Black-300, #B0B0B0);
+}
+
+.btn {
+    margin-top: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    height: 2.375rem;
+    padding: 0rem 26.7rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    align-self: stretch;
+    border-radius: var(--Curve-curve-md, 0.5rem);
+    border: 1px solid #34B4FC;
+    background: linear-gradient(90deg, #34B4FC 0%, #007BCB 100%);
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 0rem;
+    letter-spacing: 0.0225rem;
+}
+
+.btn:hover {
+    background: var(--color-primary-600);
+    color: var(--color-white);
+}
+
+
+
+@media screen and (max-width: 481px) {
+    .cardmain {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .cardfirst_box{
+        width: 24rem;
+    }
+    .btn{
+        padding: 0rem 9.15rem;
+
+    }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    .cardmain {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .cardfirst_box{
+        width: 24rem;
+    }
+    .btn{
+        padding: 0rem 19.15rem;
+
+    }
+    }
+ @media screen and (min-width: 769px) and (max-width: 1024px){
+    .cardmain {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+ }
+ @media screen and (min-width: 1025px) and (max-width: 1200px){
+    .accordingcontainer__{
+        padding:0rem 0rem;
+     }
+ }
+ @media screen and (min-width: 1201px) and (max-width:1600px){
+    .accordingcontainer__{
+        padding:0rem 0rem;
+     }
+ }

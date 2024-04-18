@@ -1,0 +1,121 @@
+.mainContainer {
+    padding: 2.5rem 2rem 2.5rem 1rem;
+}
+
+.container {
+    display: flex;
+    height: 20.375rem;
+    padding: 1rem 1rem;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    align-self: stretch;
+    border-radius: 1rem;
+    background: #FFF;
+    box-shadow: 0px 4px 16px 0px rgba(50, 50, 71, 0.06), 0px 4px 8px 0px rgba(0, 100, 168, 0.08);
+}
+
+.firstcontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    align-self: stretch;
+}
+
+.firstbox_ {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.firstbox__ {
+    width: 0.625rem;
+    height: 2.3125rem;
+    border-radius: 0.25rem;
+    background: rgba(7, 44, 74, 0.24);
+}
+
+.firstboxcontainer__{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    align-items: flex-start;
+
+}
+
+
+.secondContainer {
+    width: 100%;
+}
+
+.secondmainbox {
+    display: flex;
+    flex-direction: row;
+    width: 70.75rem;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.cardcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:  0.5rem;
+}
+
+
+
+
+
+.cardbox {
+    display: flex;
+    width: 10rem;
+    height: 12.75rem;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 0.5625rem;
+    border-radius: 0.5rem;
+}
+
+.cardfnt{
+color:  #3D3D3D;
+font-family: 'Inter';
+font-size: 0.625rem;
+font-style: normal;
+font-weight: 600;
+line-height: 0.8125rem; 
+padding-left:1.5rem;
+box-sizing: border-box;
+}
+
+.cardimage{
+    width: 146px;
+    height: 188px;
+    position: relative;
+}
+
+ .slidercontainer{
+    cursor: pointer;
+ }
+
+
+.cardimagecover{
+    position: absolute;
+    width: 9.125rem;
+    height: 11.75rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.00) 50.16%, #000 96.72%);
+    
+}   
+
+.cardsvg{
+    position: absolute;
+    top: 150px;
+    left: 50px;
+}

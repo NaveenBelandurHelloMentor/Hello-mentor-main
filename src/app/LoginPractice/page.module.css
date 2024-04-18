@@ -1,0 +1,708 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Lato:ital,wght@1,100&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.mainContainer {
+  padding: 2.5rem 2rem 2.5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.firstcard {
+  width: 32.5rem;
+  height: 37rem;
+  background: #1371ff;
+  border-radius: 1rem 0rem 0rem 1rem;
+  background: #1371ff;
+  box-shadow: 0px 4px 8px 0px rgba(0, 100, 168, 0.08),
+    0px 4px 16px 0px rgba(50, 50, 71, 0.06);
+  border: 1px solid black;
+  position: relative;
+}
+
+/* This is background Cirlce */
+.backgroundBoxone_ {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  border-radius: 0% 100% 100% 0% / 30% 0% 100% 70%;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  animation: BackgroundBoxOne;
+  animation-duration: 6s;
+  animation-delay: 4s;
+  /* animation-iteration-count: infinite; */
+  transform: scale(0.2);
+}
+
+.backgroundBoxtwo_ {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  color: rgb(186, 8, 8);
+}
+
+.backgroundBothree_ {
+  position: absolute;
+  top: 20%;
+  left: 16%;
+  opacity: 0;
+  width: 80%;
+  height: 80%;
+  /* border-radius: 99% 1% 0% 100% / 100% 1% 99% 0%; */
+  border-radius: 0% 100% 100% 0% / 30% 0% 100% 70%;
+  animation: BackgroundBoxOne;
+  animation-duration: 15s;
+  animation-delay: 6s;
+  /* animation-iteration-count: infinite; */
+  transform: scale(0.2);
+}
+
+.backgroundBoxfour_ {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  bottom: 0%;
+  left: 0%;
+  animation: BackgroundBoxTwo;
+  animation-duration: 18s;
+  animation-delay: 8s;
+  animation-iteration-count: infinite;
+  transform: scale(0.2);
+
+}
+
+.backgroundBoxfive_ {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  color: rgb(158, 79, 79);
+}
+
+
+
+
+.firstbox_ {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  height: 18rem;
+  padding: 20.375rem 0.0205rem 0rem 0rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.lastbox_ {
+  display: flex;
+  padding: var(--Spacing-gap-0, 0rem);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: stretch;
+}
+
+.lastboxtext {
+
+  text-align: center;
+  color: var(--Color-Neutral-cn-light-100, #fff);
+  font-family: "Montserrat";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.375rem;
+  position: absolute;
+  bottom: 10%;
+  right: 32%;
+}
+
+.lastbox__ {
+  position: absolute;
+  color: var(--Color-Primary-cp-light-98, #f8f9ff);
+  font-family: "Inter";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+  text-align: center;
+  bottom: 7%;
+  right: 7%;
+}
+
+.cardcontainer__ {
+  position: relative;
+  animation: slide-up;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1.2ms;
+  animation-duration: 5s;
+  opacity: 1;
+}
+
+.cardboxsmall {
+  position: absolute;
+  display: flex;
+  width: 2.6875rem;
+  height: 2.6875rem;
+  padding: var(--Spacing-gap-0, 0rem);
+  top: 150px;
+  left: 170px;
+  justify-content: center;
+  align-items: center;
+  gap: var(--Spacing-gap-0, 0rem);
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  border: 3px solid #fff;
+}
+
+.cardboxsmall_arrow {
+  opacity: 0;
+  position: absolute;
+  display: flex;
+  width: 2.6875rem;
+  height: 2.6875rem;
+  padding: var(--Spacing-gap-0, 0rem);
+  top: 150px;
+  left: 170px;
+  justify-content: center;
+  align-items: center;
+  gap: var(--Spacing-gap-0, 0rem);
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  border: 3px solid #fff;
+  background-color: #eee;
+  animation-name: arrowbox;
+  animation-delay: 2s;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+}
+
+.typingDemo {
+  opacity: 0;
+  position: absolute;
+  top: 166px;
+  left: 100px;
+  padding: 0.625rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.5rem;
+  border: 3px solid #fff;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+  color: var(--Primary-Blue-500, #0a9ced);
+  font-family: "Montserrat";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 4s steps(13);
+  animation-duration: 4s;
+  animation-delay: 11s;
+}
+
+/* card scroll */
+.cardScrollmaincontainer {
+  opacity: 1;
+  box-sizing: border-box;
+  position: relative;
+  bottom: 91%;
+}
+
+.cardscroll {
+  opacity: 0;
+  top: 80px;
+  left: 73px;
+  position: absolute;
+  display: flex;
+  width: 14.86794rem;
+  padding: 0.44269rem 0.66406rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.66406rem;
+  border-radius: 0.44269rem;
+  animation-name: pageScrolltop;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+  animation-delay: 15s;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.cardscroll_two {
+  opacity: 0;
+  animation-name: pageScrolltop;
+  animation-timing-function: ease-in-out;
+  animation-duration: 4s;
+  animation-delay: 15s;
+  top: 160px;
+  left: 73px;
+  position: absolute;
+  display: flex;
+  width: 14.86794rem;
+  padding: 0.44269rem 0.66406rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.66406rem;
+  border-radius: 0.44269rem;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.cardsrollbox {
+  width: 3.597rem;
+  height: 3.54169rem;
+  flex-shrink: 0;
+  border-radius: 0.60875rem;
+  background: #eee;
+}
+
+.cardsscrollboxcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 0.68rem;
+  width: 100%;
+}
+
+.cardscrollline {
+  width: 7.50881rem;
+  height: 0.50619rem;
+  border-radius: 0.67494rem;
+  background: #75acff;
+}
+
+.cardscrollline_ {
+  width: 5.73706rem;
+  height: 0.50619rem;
+  border-radius: 0.67494rem;
+  background: #e0e5ee;
+}
+
+.cardscrollbox__ {
+  display: flex;
+  padding: var(--Spacing-gap-0, 0rem);
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.67494rem;
+  flex: 1 0 0;
+}
+
+.secondcard {
+  width: 31.875rem;
+  height: 37rem;
+  border-radius: 0rem 1rem 1rem 0rem;
+  background: var(--P-50, #fff);
+  box-shadow: 0px 4px 8px 0px rgba(0, 100, 168, 0.08),
+    0px 4px 16px 0px rgba(50, 50, 71, 0.06);
+}
+
+.secondbox {
+  display: flex;
+  padding: var(--Spacing-gap-16, 4rem) var(--Spacing-gap-8, 2rem)
+    var(--Spacing-gap-8, 2rem) var(--Spacing-gap-8, 2rem);
+  flex-direction: column;
+  align-items: center;
+  gap: var(--Spacing-gap-16, 4rem);
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.secondheading {
+  display: flex;
+  padding: var(--Spacing-gap-0, 0rem);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  align-self: stretch;
+}
+
+.otphead {
+  color: var(--Black-950, #000);
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.375rem;
+}
+
+.optpara {
+  color: var(--Black-950, #000);
+  text-align: center;
+  font-family: "Inter";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.3125rem;
+}
+
+.secondcardcontainer {
+  display: flex;
+  padding: var(--Spacing-gap-0, 0rem);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--Spacing-gap-16, 4rem);
+  align-self: stretch;
+}
+
+.optauthcontainer {
+  display: flex;
+  padding: var(--Spacing-gap-0, 0rem);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  align-self: stretch;
+}
+
+.opttextsecond_ {
+  color: var(--Black-950, #000);
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.0625rem;
+}
+
+.optmain {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  align-self: stretch;
+}
+
+.opttext_ {
+  width: 4.4375rem;
+  height: 4.4375rem;
+  border-radius: 1.25rem;
+  border: 1.6px solid #d1e4ff;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  color: var(--Color-Neutral-cn-medium-40, #5d5e61);
+  font-family: "Inter";
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.btncontainer {
+  display: flex;
+  width: 7rem;
+  height: 2.375rem;
+  padding: 0rem var(--Spacing-card-tB-lR, 1rem);
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: var(--Curve-curve-md, 0.5rem);
+  background: linear-gradient(90deg, #34b4fc 0%, #007bcb 100%);
+  cursor: pointer;
+  border: 0px;
+  color: white;
+  color: var(--Black-0, #fff);
+  text-align: center;
+  font-family: "Inter";
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 0rem;
+  letter-spacing: 0.0225rem;
+}
+
+.fifthcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: stretch;
+}
+
+.lastboxcontianer{
+  display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ gap: 0.5rem;
+ align-self: stretch;
+ position: relative;
+ }
+
+ .fifthtext{
+  color:  #FFF;
+  font-family: 'Montserrat';
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.375rem; 
+  }
+  
+  .fifithtext_{
+  color:  #F8F9FF;
+  font-family: 'Inter';
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem; 
+  }
+
+
+  .fifithsvg{
+    position: absolute;
+    bottom: -75%;
+    }
+    
+
+
+.subcontainer {
+  animation-name: mainBox;
+  animation-duration: 9s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  opacity: 0;
+}
+
+.boxcontainerparent {
+  animation: boxHide;
+  animation-duration: 10s;
+  animation-delay: 7.5s;
+  animation-iteration-count: 1;
+}
+
+.boxcontainer {
+  position: absolute;
+  display: flex;
+  width: 2.6875rem;
+  height: 2.6875rem;
+  padding: var(--Spacing-gap-0, 0rem);
+  top: 150px;
+  left: 170px;
+  justify-content: center;
+  align-items: center;
+  gap: var(--Spacing-gap-0, 0rem);
+  flex-shrink: 0;
+  border-radius: 0.5rem;
+  border: 3px solid #fff;
+  animation: boxColor, boxUp;
+  animation-duration: 1s, 3s;
+  animation-delay: 3s, 4s;
+  animation-iteration-count: 1, 1;
+  animation-fill-mode: forwards, forwards;
+}
+
+.arrowfill {
+  opacity: 0;
+  animation: fillarrow;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.text {
+  opacity: 0;
+  letter-spacing: 1px;
+  margin: 0 auto;
+  background-color: lightskyblue;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Montserrat";
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  white-space: nowrap;
+  border-radius: 8px;
+  padding: 0.625rem;
+  text-align: center;
+  width: 0ch;
+  overflow: hidden;
+  color: var(--Primary-Blue-500, #0a9ced);
+  border-radius: 0.5rem;
+  border: 3px solid #fff;
+  background: #fff;
+  animation: typing 3s steps(14) 1;
+  animation-delay: 4.5s;
+  animation-fill-mode: forwards;
+}
+
+/* Scroll Bar animation */
+.scrollcontainer {
+  gap: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 30%;
+  left: 20%;
+  animation: Scrollup;
+  animation-delay: 7.5s;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+.scrollfinal {
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 23.5%;
+  left: 20%;
+  animation: Scrolllast;
+  animation-delay: 8s;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+@keyframes typing {
+  from {
+    opacity: 1;
+    width: 1ch;
+  }
+  to {
+    width: 12ch;
+    opacity: 1;
+  }
+}
+
+@keyframes mainBox {
+  0%,
+  10% {
+    transform: translateY(80%);
+    opacity: 0;
+  }
+
+  11%,
+  100% {
+    transform: translateY(-10%);
+    opacity: 1;
+  }
+}
+
+@keyframes boxColor {
+  0%,
+  50% {
+    background-color: none;
+  }
+  51%,
+  100% {
+    color: blue;
+    background-color: #fff;
+  }
+}
+
+@keyframes boxUp {
+  0%,
+  20% {
+    transform: translateY(0%);
+  }
+  21%,
+  100% {
+    transform: translateY(-40%);
+  }
+}
+
+@keyframes fillarrow {
+  0%,
+  20% {
+    opacity: 0;
+  }
+  21%,
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes boxHide {
+  0%,
+  100% {
+    display: none;
+  }
+}
+
+@keyframes Scrollup {
+  0%,
+  20% {
+    transform: translateY(0%);
+    visibility: visible;
+  }
+  21%,
+  100% {
+    transform: translateY(-40%);
+    visibility: hidden;
+  }
+}
+
+@keyframes Scrolllast {
+  0%,
+  90% {
+    visibility: visible;
+  }
+
+  91%,
+  100% {
+    visibility: hidden;
+  }
+}
+
+
+
+/* Linear agrandietn*/
+
+@keyframes BackgroundBoxOne {
+  0%,
+  50% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  51%,
+  100% {
+    background-color: #75acff;
+    transform: scale(1);
+    filter: blur(40px);
+    opacity: 1;
+  }
+}
+
+@keyframes BackgroundBoxTwo {
+  0%,
+  50% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  51%,
+  100% {
+    background-color: #588bff;
+    transform: scale(0.5);
+    filter: blur(80px);
+    opacity: 1;
+  }
+}
+
+

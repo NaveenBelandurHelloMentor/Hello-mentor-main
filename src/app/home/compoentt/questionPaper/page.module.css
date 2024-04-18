@@ -1,0 +1,100 @@
+.mainContainer {
+    padding: 2.5rem 2rem 2.5rem 1rem;
+}
+
+.heading {
+    display: flex;
+    padding: 2.5rem 2rem 2.5rem 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.625rem;
+    align-self: stretch;
+}
+
+.cardcontianer {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    align-self: stretch;
+    border-radius: 1rem;
+    background: #FFF;
+    box-shadow: 0px 4px 8px 0px rgba(0, 100, 168, 0.08), 0px 4px 16px 0px rgba(50, 50, 71, 0.06);
+}
+
+.cardBox {
+    width: 100%;
+    display: grid;
+    column-gap: 2.0625rem;
+    row-gap: 1.5rem;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto;
+}
+
+.insideCard {
+    padding: 1rem;
+    border-radius: var(--Curve-curve-md, 0.5rem);
+    background: var(--Primary-Blue-50, #F0F8FF);
+}
+
+.insidecontianer {
+    display: flex;
+height: 2.375rem;
+padding: 0rem var(--Spacing-gap-8, 0.5rem) 0rem 0.75rem;
+justify-content: space-between;
+align-items: center;
+gap: 0.25rem;
+}
+
+.fnt {
+    color: #0A9CED;
+}
+
+.fn {
+    color: #3D3D3D;
+}
+
+.btn {
+    display: flex;
+    height: 2.375rem;
+    padding: 0rem 0.5rem 0rem 0.75rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    border-radius: var(--Curve-curve-md, 0.5rem);
+    background: linear-gradient(90deg, #34B4FC 0%, #007BCB 100%);
+    cursor: pointer;
+    color: white;
+    border: #0A9CED;
+    color: var(--Black-0, #FFF);
+    text-align: center;
+    font-family: Inter;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 0rem;
+    letter-spacing: 0.0225rem;
+}
+
+/* Media Querries */
+@media only screen and (max-width: 481px) {
+  .cardBox{
+    grid-template-columns: auto;
+  }
+}
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    .cardBox{
+        grid-template-columns: auto;
+      }
+   
+}
+
+
+@media only screen and (max-width: 1025px) {
+    
+}

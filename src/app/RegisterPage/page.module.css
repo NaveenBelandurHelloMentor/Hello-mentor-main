@@ -1,0 +1,570 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Lato:ital,wght@1,100&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.mainContainer {
+  padding: 2.5rem 2rem 2.5rem 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.firstcard {
+  width: 32.5rem;
+  height: 37rem;
+  border-radius: 1rem 0rem 0rem 1rem;
+  background: #1371ff;
+  box-shadow: 0px 4px 8px 0px rgba(0, 100, 168, 0.08),
+    0px 4px 16px 0px rgba(50, 50, 71, 0.06);
+  border: 1px solid black;
+  position: relative;
+}
+
+/* This is background Cirlce */
+.backgroundBoxone_ {
+  position: absolute;
+  top: 21%;
+  left: 24%;
+  border-radius: 200px 200px 200px 200px;
+  opacity: 1;
+  width: 53%;
+  height: 54%;
+  animation: BackgroundBoxOne;
+  animation-delay: 5s;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+.backgroundBoxtwo_ {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  color: rgb(186, 8, 8);
+  opacity: 1;
+  animation: BackgroundBoxTwo;
+  animation-delay: 6s;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
+}
+
+.backgroundBothree_ {
+  position: absolute;
+  top: 20%;
+  left: 16%;
+  opacity: 1;
+  width: 80%;
+  height: 80%;
+  /* border-radius: 99% 1% 0% 100% / 100% 1% 99% 0%; */
+  border-radius: 0% 100% 100% 0% / 30% 0% 100% 70%;
+ 
+}
+
+.backgroundBoxfour_ {
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  bottom: 0%;
+  left: 0%;
+  opacity: 1;
+ 
+
+}
+
+.backgroundBoxfive_ {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  color: rgb(158, 79, 79);
+  opacity: 1;
+}
+
+.firstbox_ {
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  height: 18rem;
+  padding: 20.375rem 0.0205rem 0rem 0rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+}
+
+.cardscrollbox__ {
+  display: flex;
+  padding: var(--Spacing-gap-0, 0rem);
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.67494rem;
+  flex: 1 0 0;
+}
+
+.secondcard {
+  width: 31.875rem;
+  height: 37rem;
+  border-radius: 0rem 1rem 1rem 0rem;
+  background: var(--P-50, #fff);
+  box-shadow: 0px 4px 8px 0px rgba(0, 100, 168, 0.08),
+    0px 4px 16px 0px rgba(50, 50, 71, 0.06);
+}
+
+.secondbox {
+  display: flex;
+  padding: var(--Spacing-gap-16, 4rem) var(--Spacing-gap-8, 2rem) var(--Spacing-gap-8, 2rem) var(--Spacing-gap-8, 2rem);
+  flex-direction: column;
+  align-items: center;
+  gap: var(--Spacing-gap-16, 4rem);
+  flex: 1 0 0;
+  align-self: stretch;
+}
+
+.secondheading {
+  display: flex;
+  padding: var(--Spacing-gap-0, 0rem);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  align-self: stretch;
+}
+
+.lastboxcontianer{
+ display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 0.5rem;
+align-self: stretch;
+position: relative;
+}
+
+.fifithsvg{
+position: absolute;
+bottom: -75%;
+}
+
+
+.secondcardcontainer {
+  display: flex;
+  padding: var(--Spacing-gap-0, 0rem);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--Spacing-gap-16, 4rem);
+  align-self: stretch;
+}
+
+.optauthcontainer {
+  display: flex;
+  padding: var(--Spacing-gap-0, 0rem);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  align-self: stretch;
+}
+
+.opttextsecond_ {
+  color: var(--Black-950, #000);
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.0625rem;
+}
+
+.inputcontainer {
+  display: flex;
+  width: 300px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.inputicon {
+  display: flex;
+  padding: var(--Spacing-gap-0, 0rem);
+  align-items: center;
+  gap: var(--Spacing-gap-8, 0.5rem);
+  position: absolute;
+  z-index: 1;
+  left: 56%;
+  top: 32.8%;
+}
+
+.inputtext_ {
+  color: var(--Black-300, #B0B0B0);
+  font-family: 'Inter';
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.125rem;
+}
+
+.inputBox {
+  display: flex;
+  height: 38px;
+  padding: var(--Spacing-gap-0, 0px) var(--Spacing-gap-8, 8px);
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: var(--Curve-curve-1, 4px);
+  border: 1px solid var(--Black-300, #b0b0b0);
+  position: relative;
+}
+
+.btncontainer {
+  display: flex;
+  width: 7rem;
+  height: 2.375rem;
+  padding: 0rem var(--Spacing-card-tB-lR, 1rem);
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: var(--Curve-curve-md, 0.5rem);
+  background: linear-gradient(90deg, #34b4fc 0%, #007bcb 100%);
+  cursor: pointer;
+  border: 0px;
+  color: white;
+  color: var(--Black-0, #fff);
+  text-align: center;
+  font-family: "Inter";
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 0rem;
+  letter-spacing: 0.0225rem;
+}
+
+.fifthtext{
+color:  #FFF;
+font-family: 'Montserrat';
+font-size: 1.125rem;
+font-style: normal;
+font-weight: 700;
+line-height: 1.375rem; 
+}
+
+.fifithtext_{
+color:  #F8F9FF;
+font-family: 'Inter';
+font-size: 0.75rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1rem; 
+}
+/* Animtion */
+.subcontainer {
+  animation-name: mainBoxOne_;
+  animation-duration: 8s;
+  animation-delay: 500ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  opacity: 0;
+
+}
+
+.FirstImageContainer {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+  width: 8.875rem;
+  height: 8.875rem;
+  border-radius: 50%;
+  background-color: rgba(238, 238, 238, 0.93);
+  animation: ProfileFirst;
+  animation-duration: 1s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+}
+
+.image_ {
+  width: 8.875rem;
+  height: 8.875rem;
+  border-radius: 50%;
+}
+
+.secondImageContainer__ {
+  position: absolute;
+  top: 35%;
+  left: 30%;
+}
+
+.SecondImageContainer {
+  opacity: 0;
+  width: 8.875rem;
+  height: 8.875rem;
+  border-radius: 50%;
+  background-color: rgba(238, 238, 238, 0.93);
+  transform: scale(0.5);
+  animation: Profileup, ProfileLeft;
+  animation-delay: 5s, 8s;
+  animation-duration: 7s, 10s;
+  animation-iteration-count: 1, 1;
+  animation-fill-mode: forwards, forwards;
+}
+
+.image_second {
+  width: 8.875rem;
+  height: 8.875rem;
+  border-radius: 50%;
+
+}
+
+.thirdimagecontainer {
+  opacity: 0;
+  position: absolute;
+  bottom: 0%;
+  width: 8.875rem;
+  height: 8.875rem;
+  border-radius: 50%;
+  background-color: rgba(238, 238, 238, 0.93);
+  transform: scale(0.5);
+  animation: Profiledown, ProfileRight;
+  animation-delay: 5s, 8s;
+  animation-duration: 7s, 10s;
+  animation-iteration-count: 1, 1;
+  animation-fill-mode: forwards, forwards;
+}
+
+.image_third {
+  width: 8.875rem;
+  height: 8.875rem;
+  border-radius: 50%;
+}
+
+
+.fourthimagecontainer {
+  position: absolute;
+  top: 30%;
+  left: 33%;
+  opacity: 0;
+  z-index: -1;
+  animation: sideFrame;
+  animation-duration: 1s;
+  animation-delay: 8s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+}
+
+.fifthimagecontainer {
+  position: absolute;
+  bottom: 14%;
+  right: 40%;
+  opacity: 0;
+  z-index: -1;
+  animation: sideFrame;
+  animation-duration: 1s;
+  animation-delay: 8s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.fifthcontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  align-self: stretch;
+}
+
+
+.accountlink {
+  color: #0A9CED;
+  font-family: 'Inter';
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.125rem;
+  text-decoration: none;
+}
+
+
+
+@keyframes mainBoxOne_ {
+  0%,
+  20% {
+    transform: translateY(80%);
+    opacity: 0;
+  }
+  25%,
+  100% {
+    transform: translateY(-10%);
+    opacity: 1;
+  }
+}
+
+
+
+/* New Animation */
+
+@keyframes ProfileFirst {
+
+  0%,
+  20% {
+    transform: scale(1);
+  }
+
+  25%,
+  98% {
+    transform: scale(0.5);
+  }
+
+  99%,
+  100% {
+    transform: scale(0.5);
+    display: none;
+  }
+}
+
+@keyframes Profileup {
+
+  0%,
+  20% {
+    opacity: 1;
+    transform: translate(0%) scale(0.5);
+  }
+
+  25%,
+  100% {
+    opacity: 1;
+    transform: translateY(-43%) scale(0.5);
+  }
+}
+
+@keyframes Profiledown {
+
+  0%,
+  20% {
+    opacity: 1;
+    transform: translateY(0%) scale(0.5);
+  }
+
+  25%,
+  100% {
+    opacity: 1;
+    transform: translateY(43%) scale(0.5);
+  }
+}
+
+
+@keyframes ProfileLeft {
+
+  0%,
+  20% {
+    opacity: 1;
+    transform: translateY(-43%) translateX(-80%) scale(0.5);
+  }
+
+  25%,
+  100% {
+    opacity: 1;
+    transform: translateY(-43%) translateX(-80%) scale(0.5);
+  }
+}
+
+@keyframes ProfileRight {
+
+  0%,
+  20% {
+    opacity: 1;
+    transform: translateY(43%) translateX(80%) scale(0.5);
+  }
+
+  25%,
+  100% {
+    opacity: 1;
+    transform: translateY(43%) translateX(80%) scale(0.5);
+  }
+} 
+
+
+/* Linear Gradient */
+
+ @keyframes BackgroundBoxOne {
+  0%,
+  50% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  51%,
+  100% {
+    background-color: #0873e3;
+    transform: scale(1);
+    filter: blur(40px);
+    opacity: 1;
+  }
+} 
+
+
+@keyframes BackgroundBoxTwo {
+  0%,
+  50% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+  51%,
+  100% {
+    background-color: #0873e3;
+    transform: scale(1) translateY(0%) translateY(100%);
+    filter: blur(40px);
+    opacity: 1;
+  }
+} 
+
+
+@keyframes sideFrame {
+
+  0%,
+  50% {
+    transform: scaleX(0.5);
+    opacity: 1;
+  }
+
+  50%,
+  100% {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+
+/* media Querries */
+@media screen and (min-width: 320px) and (max-width: 426px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1600px) {
+
+}

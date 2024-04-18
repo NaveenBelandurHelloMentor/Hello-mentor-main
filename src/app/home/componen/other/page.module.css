@@ -1,0 +1,101 @@
+.mainContainer {
+    padding: 2.5rem 2rem 2.5rem 1rem;
+
+}
+
+.box {
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    border-radius: 1rem;
+    background: #FFF;
+    box-shadow: 0px 4px 16px 0px rgba(50, 50, 71, 0.06), 0px 4px 8px 0px rgba(0, 100, 168, 0.08);
+}
+
+.firstsection {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.side {
+    width: 0.625rem;
+    height: 2.3125rem;
+    border-radius: 0.25rem;
+    background: rgba(7, 44, 74, 0.24);
+}
+
+.frtsectionfont {
+    padding-top: 0.25rem;
+    box-sizing: border-box;
+}
+
+.secondSection {
+    box-sizing: border-box;
+    padding-top: 1rem;
+}
+
+.thirdSection {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.thirdcontainer {
+    display: flex;
+    height: 20rem;
+    flex-direction: column;
+    gap: 1rem;
+    overflow: scroll;
+
+
+}
+
+
+
+.thirdhead {
+    display: flex;
+    padding: var(--Spacing-gap-8, 0.5rem) 0rem var(--Spacing-gap-8, 0.5rem) 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+    align-self: stretch;
+}
+
+.thirdbox__ {
+    display: flex;
+    padding: 1.25rem;
+    align-items: center;
+    gap: 1.5rem;
+    align-self: stretch;
+    border-radius: 0.5rem;
+    background: var(--color-background, #F8F9FF);
+    box-sizing: border-box;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.fnt {
+    color: #007BCB;
+    letter-spacing: 0.0225rem;
+    text-decoration-line: underline;
+}
+
+
+.circleContianer {
+    position: relative;
+}
+
+.circle {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 1rem;
+    background: #FFA80B;
+    position: absolute;
+    left: 0.375rem;
+    top: 0.375rem;
+}

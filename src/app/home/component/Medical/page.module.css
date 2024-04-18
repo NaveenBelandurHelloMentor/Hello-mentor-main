@@ -1,0 +1,326 @@
+.mainContainer {
+    padding: 2.5rem 2rem 2.5rem 1rem;
+}
+
+.box {
+    display: flex;
+    padding-top: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.5rem;
+    align-self: stretch;
+    border-radius: 1rem;
+    background: #FFF;
+    box-shadow: 0px 4px 16px 0px rgba(50, 50, 71, 0.06), 0px 4px 8px 0px rgba(0, 100, 168, 0.08);
+    position: relative;
+    z-index: 1;
+
+       
+}
+
+.medicalCorner{
+    position: absolute;
+    top:0;
+    right: 0;
+}
+
+.medicalCornerone{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    transform: rotate(180deg);
+    z-index: 1;
+}
+
+
+.mainHeader {
+    display: flex;
+    padding: 0rem 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    align-self: flex-start;
+}
+
+
+
+.head {
+    width: 0.625rem;
+    height: 2.3125rem;
+    border-radius: var(--Curve-curve-sm, 0.25rem);
+    background: rgba(7, 44, 74, 0.24);
+}
+
+.fonttitle {
+    padding-top: 0.25rem;
+    box-sizing: border-box;
+}
+
+.secondContainer {
+    padding-top: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.secondCardmain {
+    display: flex;
+    padding: 1rem 2.625rem;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
+    align-self: stretch;
+    flex-direction: row;
+}
+
+.card {
+    display: flex;
+    width: 22.25rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 0.5rem;
+    border: 0.5px solid #B0B0B0;
+    background: #FFF;
+    z-index: 1;
+
+}
+
+.cardheading {
+    display: flex;
+    padding: 0.5rem 0rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    align-self: stretch;
+    background: #DFF0FF;
+}
+
+.cardMiddle {
+    display: flex;
+    padding: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.3125rem;
+    align-self: stretch;
+    border-radius: 0.5rem;
+    border: 0.5px solid #B0B0B0;
+    margin: 0.5rem;
+}
+
+.cardMiddlecontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.cardFont {
+    color: #6D6D6D;
+    padding-top: 0.25rem;
+    box-sizing: border-box;
+}
+
+.cardDates {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+    padding-top: 1.3125rem;
+    padding-bottom: 1.3125rem;
+    box-sizing: border-box;
+
+}
+
+.dateCard {
+    color: #0A9CED;
+}
+
+.dateCardY {
+    color: #6D6D6D;
+}
+
+.order {
+    color: #0A9CED;
+}
+
+.TimeCard {
+    display: flex;
+    padding: 0.125rem 0.375rem 0.125rem 0.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+    border-radius: 0.25rem;
+    background: #D8FFE3;
+}
+
+.timecard {
+    color: #05B43A;
+    text-align: center;
+    letter-spacing: 0.015rem;
+}
+
+.Trackingcontainer {
+    display: flex;
+    padding: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    align-self: stretch;
+    border-radius: 0.5rem;
+    border: 0.5px solid #B0B0B0;
+    margin: 0.5rem;
+}
+
+.TrackingAvatar {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(10, 156, 237, 0.00);
+    background: url('/public/next.svg'), lightgray -15.077px -16.911px / 297.07% 198.047% no-repeat, rgba(217, 217, 217, 0.00);
+}
+
+.TrackOrderBox {
+    display: flex;
+    padding: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.trackorderClr {
+    color: #6D6D6D;
+}
+
+.trackk {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--Spacing-gap-1, 0.25rem);
+}
+
+.SmallText {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.line {
+    width: 20.25rem;
+    height: 0.03125rem;
+    background: #B0B0B0;
+}
+
+.tracklastcontainer {
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.trackbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.clr {
+    color: #6D6D6D;
+}
+
+.cr {
+    padding-top: 0.5rem;
+    box-sizing: border-box;
+}
+
+.cr>p {
+    padding-top: 0.25rem;
+    box-sizing: border-box;
+}
+
+.thirdcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    flex: 1 0 0;
+}
+
+.thirdcard {
+    width: 36.45131rem;
+    height: 20.4375rem;
+    background: #CDCDCD;
+}
+
+.btn{
+    width: 7rem;
+    height: 2.375rem;
+    padding: 0rem  1rem;
+    border-radius: var(--Curve-curve-md, 0.5rem);
+    background: linear-gradient(90deg, #34B4FC 0%, #007BCB 100%);
+    border:0px solid ;
+    color: white;
+     cursor: pointer;
+}
+
+
+/* Media Querries*/
+
+@media screen and (max-width: 480px){
+    .secondCardmain{
+        flex-direction: column;
+      }
+      .thirdcard{
+       width: 16.5rem;
+       height: 13.5rem;
+      }
+      .card {
+        width: 16.25rem; 
+    }
+    .line {
+        width: 13.5rem;
+    }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    .secondCardmain{
+        flex-direction: column;
+      }
+      .thirdcard{
+       width: 22.5rem;
+       height: 13.5rem;
+      }
+    
+      
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    .secondCardmain{
+        flex-direction: column;
+      }
+      .thirdcard{
+        width: 40rem;
+        height: 20rem;
+    
+      }
+      .card {
+        width: 40rem; 
+    }
+    .line {
+        width: 37rem;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1201px) and (max-width:1600px){
+
+}
+
